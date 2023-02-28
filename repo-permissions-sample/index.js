@@ -1,9 +1,9 @@
 const request =  require('request');
 const vsoNodeApi = require('azure-devops-node-api');
 // Create a personal from azure devops
-const token = "<INSERT TOKEN>";
+const token = "3t4bkhhrnbvpivsgvkyr37hdld4tkcvfxzrhst6saiikrjmsgqsq";
 // Url to your organization
-const serverUrl = '<INSERT REPO URL>'; 
+const serverUrl = 'https://github.com/SMIT-PAREKH-27/Azure-DevOps.git'; 
 let authHandler = vsoNodeApi.getPersonalAccessTokenHandler(token); 
 let AzDO = new vsoNodeApi.WebApi(serverUrl, authHandler, undefined);
 
